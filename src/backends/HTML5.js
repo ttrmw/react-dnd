@@ -368,7 +368,7 @@ class HTML5Backend {
 
       // Store drag source node so we can check whether
       // it is removed from DOM and trigger endDrag manually.
-      this.setCurrentDragSourceNode(e.target);
+      this.setCurrentDragSourceNode(_sourceNode);
 
       // Now we are ready to publish the drag source.. or are we not?
       const { captureDraggingState } = this.getCurrentSourcePreviewNodeOptions();
